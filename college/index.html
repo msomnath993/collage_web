@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" type="image/logo1" href="image/logo1.png">
+   <link rel="stylesheet" href="styles.css">
+   <title>My Fav Picture Collage</title>
+</head>
+<body>
+   <div class="container"> <!--start of main container-->
+      <header>
+         <h1>My Collage</h1>
+      </header>
+      <div class="nav-wrapper"> <!--start of nav bar-->
+         <div class="left-side">
+            <div class="nav-link-wrapper active-nav-link">
+               <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link-wrapper">
+               <a href="course.html">course</a>
+            </div>
+            <div class="nav-link-wrapper">
+               <a href="about.html">About</a>
+            </div>
+         </div>
+         <div class="right-side">
+            <div class="brand">
+                <a href="https://www.facebook.com/profile.php?id=100005711776592" target="_blank"> 
+                 facebook LINK: SOMNATH MONDAL
+               </a>
+            </div>
+         </div>
+      </div> <!--end of nav bar div-->
+      <div class="content-wrapper"> <!--start of main content-->
+         <div class="portfolio-items-wrapper">
+
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(image/pic1.jpg)"></div>
+               <a href="image/pic1.jpg" target="_blank">
+                  <div class="img-text-wrapper">
+                     <div class="subtitle">Me in fornt of b.ed clg</div>
+                  </div>
+               </a>
+            </div> 
+            <div class="portfolio-item-wrapper">
+               <div class="portfolio-img-background" style="background-image:url(image/pic2.jpg)"></div>
+               <a href="image/pic2.jpg" target="_blank">
+                  <div class="img-text-wrapper">
+                     <div class="subtitle">In Picture: me and my mom</div>
+                  </div>
+               </a>
+             </div> 
+             <div class="portfolio-item-wrapper">
+               <div class="portfolio-img-background" style="background-image:url(image/pic3.jpg)"></div>
+               <a href="image/pic3.jpg" target="_blank">
+                <div class="img-text-wrapper">
+                   <div class="subtitle">In Picture: Me and my elder brother</div>
+                </div>
+               </a>
+             </div> 
+             <div class="portfolio-item-wrapper">
+               <div class="portfolio-img-background" style="background-image:url(image/pic4.jpg)"></div>
+               <a href="image/pic4.jpg" target="_blank">
+                <div class="img-text-wrapper">
+                   <div class="subtitle">In Picture:my dad and my niece</div>
+                </div>
+               </a>
+             </div> 
+             <div class="portfolio-item-wrapper">
+               <div class="portfolio-img-background" style="background-image:url(image/pic10.jpg)"></div>
+               <a href="image/pic10.jpg" target="_blank">
+                <div class="img-text-wrapper">
+                   <div class="subtitle">In Picture: sumon , surajit me and tusher</div>
+                </div>
+               </a>
+             </div> 
+             <div class="portfolio-item-wrapper">
+               <div class="portfolio-img-background" style="background-image:url(image/pic6.jpg)"></div>
+               <a href="image/pic6.jpg" target="_blank">
+                <div class="img-text-wrapper">
+                   <div class="subtitle">In Picture:in b.ed clg me and saikat during external exam</div>
+                </div>
+               </a>
+             </div> 
+             <div class="portfolio-item-wrapper">
+               <div class="portfolio-img-background" style="background-image:url(image/pic7.jpg)"></div>
+               <a href="image/pic7.jpg" target="_blank">
+                <div class="img-text-wrapper">
+                   <div class="subtitle">In Picture: in maharaja manindra chandra clg passout batch reunion</div>
+                </div>
+               </a>
+             </div> 
+             <div class="portfolio-item-wrapper">
+               <div class="portfolio-img-background" style= "background-image:url(image/pic9.jpg) "></div>
+               <a href="image/pic9.jpg" target="_blank">
+                <div class="img-text-wrapper">
+                   <div class="subtitle">In Picture:in clg all of </div>
+                </div>
+               </a>
+             </div> 
+             <div class="portfolio-item-wrapper">
+               <div class="portfolio-img-background" style="background-image:url(image/pic11.jpg)"></div>
+               <a href="image/pic11.jpg" target="_blank">
+                <div class="img-text-wrapper">
+                   <div class="subtitle">In Pictur: My book</div>
+                </div>
+               </a>
+             </div> 
+         </div>  
+         
+      </div> <!--end of main content-->
+      <footer> <!--start of footer -->
+         <div class="footer">
+            <div class="footer-content">Somnath Mondal &copy;2022</div>
+         </div>
+      </footer><!--end of footer-->
+   </div> <!--end of main div-->
+
+</body>
+<script>
+   const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+   portfolioItems.forEach
+   (portfolioItems => {portfolioItems.addEventListener('mouseover',() => {portfolioItems.childNodes[1].classList.add('img-darken')})})
+
+   portfolioItems.forEach(portfolioItems => {portfolioItems.addEventListener('mouseout',() => {portfolioItems.childNodes[1].classList.remove('img-darken')})})
+</script>
+</html>
